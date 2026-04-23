@@ -1,1 +1,2 @@
 thesis	attempt	metric	baseline	status	summary
+#1	thesis/1-cache-object-keys-calls-in-hot-loop	1388831.0000	1404243.0000	discarded	Caching Object.keys() in a variable before the loop resulted in slightly slower performance (1,388,831 vs 1,404,243 ops/sec, -1.1%). Modern JavaScript engines likely already optimize repeated Object.keys() calls, and the extra variable allocation may add overhead.
